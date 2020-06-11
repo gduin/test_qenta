@@ -1,4 +1,5 @@
 import requests
+import json
 
 #This function return '' if value is None
 def convertString(value):
@@ -108,8 +109,21 @@ print()
 
 GetPlayers.GetById(448)
 print("Data del Id 448", GetPlayers.response.json())
-print(type(GetPlayers.response.json()))
+data=GetPlayers.response.json()
 for key, value in GetPlayers.response.json().items():
 	 print(key, value)
+
+data.update({'first_name':'Gary Jim'})
+data.update({'weight_pounds':165})
+data.update({'height_feet':5})
+data.update({'height_inches':9})
+
+print("Data Changed", data)
+try:
+	fp = open('output.json', 'w')
+	fp.write(json.dumps(data, indent=4))
+	fp.close()
+except IOError:
+	print('File output.json can not create or write')
 
 

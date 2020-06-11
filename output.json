@@ -1,0 +1,18 @@
+{
+    "id": 448,
+    "first_name": "Gary Jim",
+    "height_feet": 5,
+    "height_inches": 9,
+    "last_name": "Trent Jr.",
+    "position": "G",
+    "team": {
+        "id": 25,
+        "abbreviation": "POR",
+        "city": "Portland",
+        "conference": "West",
+        "division": "Northwest",
+        "full_name": "Portland Trail Blazers",
+        "name": "Trail Blazers"
+    },
+    "weight_pounds": 165
+}
