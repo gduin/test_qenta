@@ -1,5 +1,14 @@
 # Introduction 
-TODO: This project is a test.
+TODO: This project is a test. Need python 3 to run
+
+Dependencies:
+    -json
+    -requests
+
+Install Dependencies:
+
+pip install requests 
+pip install json
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
