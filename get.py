@@ -1,5 +1,13 @@
-import requests
-import json
+try:
+	import requests
+	import json
+except ImportError as e:
+	print("Exception Import ")
+	print("Args", e.args)
+	print("Name", e.name)
+	print("Path", e.path)
+	exit(-1)
+
 
 ###############################################################################
 #This function return '' if value is None
